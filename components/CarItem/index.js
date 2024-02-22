@@ -1,11 +1,13 @@
 
-import React from 'react'
-import styles from './style'
-import { View, Text, ImageBackground } from 'react-native'
-import StyleButton from '../StyleButton'
+import React from 'react';
+import styles from './style';
+import { View, Text, ImageBackground } from 'react-native';
+import StyleButton from '../StyleButton';
 
 const CarItem = (props) => {
-    const { name, tagline, taglineCTA, bgimg } = props
+  // const { name, tagline, taglineCTA, bgimg } = props
+    const { name, tagline, taglineCTA, bgimg } = props.car
+    
   return (
     <View style={styles.carContainer}>
 

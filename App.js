@@ -1,6 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
-import CarItem from './compenents/CarItem';
+// import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+
+import CarsList from './components/CarsList';
+// import CarItem from './components/CarItem';
 
 export default function App() {
   return (
@@ -19,12 +22,26 @@ export default function App() {
         </View>
       </View> */}
 
-      <CarItem
+      {/* <CarItem
         name={'Model X'}
         tagline={'Starting at $69.428, Order Online For'}
         taglineCTA={"Touchless Delivery"}
         bgimg={require('./assets/images/Model-X.png')}
-       />
+       /> */}
+
+      {/* {
+        car = {{
+          name: 'Model X',
+          tagline: 'Starting at $69.428, Order Online For',
+          taglineCTA: "Touchless Delivery",
+          bgimg: require('./assets/images/Model-X.png'),
+        }}
+      }
+       <CarItem
+        car={car}
+       /> */}
+
+       <CarsList />
 
       <StatusBar style="auto" />
 
