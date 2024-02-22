@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 import CarsList from './components/CarsList';
+import Header from './components/Header';
 // import CarItem from './components/CarItem';
 
 export default function App() {
@@ -41,6 +42,8 @@ export default function App() {
         car={car}
        /> */}
 
+       <Header />
+       
        <CarsList />
 
       <StatusBar style="auto" />

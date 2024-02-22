@@ -9,10 +9,6 @@ const CarsList = () => {
 
   return (
     <View style={styles.container}>
-      <Text>OK</Text>
-      <Text>OK</Text>
-      <Text>OK</Text>
-
       {/* <CarItem car={
         {
           name:'Model X of Demo',
