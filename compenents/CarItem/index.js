@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from './style'
 import { View, Text, ImageBackground } from 'react-native'
+import StyleButton from '../StyleButton'
 
 const CarItem = (props) => {
     const { name, tagline, taglineCTA, bgimg } = props
@@ -24,6 +25,20 @@ const CarItem = (props) => {
       </View>
 
       <View style={styles.buttonsContainer}>
+
+        <StyleButton type="primary" content={'Custom Order'}
+          onPress={()=>{
+            console.warn('Custom Order Button was Pressed.')
+          }}
+        />
+
+        <StyleButton
+         type="secondary"
+         content={'Existing Inventory'}
+         onPress={()=>{
+            console.warn('Existing Inventory Button was Pressed.')
+         }}
+        />
 
       </View>
 
